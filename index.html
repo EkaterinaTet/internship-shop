@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>clothing store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header__menu-burger">
+          <img src="assets/menu.svg" alt="меню" />
+        </div>
+        <nav>
+          <ul class="header-nav__items">
+            <li class="header-nav__item"><a href="#">Woman</a></li>
+            <li class="header-nav__item"><a href="#">Man</a></li>
+            <li class="header-nav__item"><a href="#">New</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="logo">Nîmes</a>
+        <div class="header-icons">
+          <a class="header-icons__search" href="#"
+            ><img src="assets/search.svg" alt="поиск"
+          /></a>
+          <a class="header-icons__basket" href="#"
+            ><img src="assets/basket.svg" alt="корзина"
+          /></a>
+        </div>
+      </header>
+
+      <main>
+        <section class="product-card">
+          <div class="slider-container">
+            <button class="prev-btn">
+              <img src="assets/arrow-left.svg" alt="left" />
+            </button>
+            <div class="images">
+              <img
+                src="assets/product-image-1.png"
+                alt="Main Image"
+                class="image big"
+              />
+              <img
+                src="assets/product-image-2.png"
+                alt="Thumbnail 1"
+                class="image"
+              />
+              <img
+                src="assets/product-image-3.png"
+                alt="Thumbnail 2"
+                class="image"
+              />
+              <img
+                src="assets/product-image-4.png"
+                alt="Thumbnail 3"
+                class="image"
+              />
+              <img
+                src="assets/product-image-5.png"
+                alt="Thumbnail 4"
+                class="image"
+              />
+            </div>
+            <button class="next-btn">
+              <img src="assets/arrow-right.svg" alt="right" />
+            </button>
+          </div>
+          <div class="product-card__content">
+            <h1>Overalls</h1>
+            <p class="product-card__description">
+              Overalls in washed organic cotton denim. Collar, button fly, and
+              adjustable belt at waist. Chest pockets with flap. Long, gently
+              flared sleeves and straight legs with front
+              <span>pockets</span> and back pockets.
+            </p>
+            <p class="option-title-color">Color</p>
+            <div class="options-color">
+              <input type="radio" id="color1" name="color" checked />
+              <label for="color1" class="color-option"></label>
+
+              <input type="radio" id="color2" name="color" />
+              <label for="color2" class="color-option"></label>
+
+              <input type="radio" id="color3" name="color" />
+              <label for="color3" class="color-option"></label>
+            </div>
+
+            <p class="option-title-size">Size</p>
+            <div class="size">
+              <input type="radio" id="size-xs" name="size" value="xs" />
+              <label for="size-xs">XS</label>
+              <input type="radio" id="size-s" name="size" value="s" checked />
+              <label for="size-s">S</label>
+              <input type="radio" id="size-m" name="size" value="m" />
+              <label for="size-m">M</label>
+              <input type="radio" id="size-l" name="size" value="l" />
+              <label for="size-l">L</label>
+              <input type="radio" id="size-xl" name="size" value="xl" />
+              <label for="size-xl">XL</label>
+            </div>
+
+            <p class="product-card__price">$ 160</p>
+            <button class="product-card__btn">Add to cart</button>
+          </div>
+        </section>
+        <section class="recommendations">
+          <div class="recommendation">
+            <div class="recommendation__title">You may also like</div>
+            <a class="recommendation__link" href="#">View all</a>
+          </div>
+          <div class="recommendation__items">
+            <a class="recommendation__item" href="#">
+              <img src="assets/similar-image-1.png" alt="фото" />
+              <div>Overalls</div>
+              <p>$ 140</p>
+            </a>
+            <a class="recommendation__item" href="#">
+              <img src="assets/similar-image-2.png" alt="фото" />
+              <div>Overalls</div>
+              <p>$ 110</p>
+            </a>
+            <a class="recommendation__item" href="#">
+              <img src="assets/similar-image-3.png" alt="фото" />
+              <div>Jacket</div>
+              <p>$ 70</p>
+            </a>
+            <a class="recommendation__item" href="#">
+              <img src="assets/similar-image-4.png" alt="фото" />
+              <div>Jacket</div>
+              <p>$ 60</p>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-wrapper">
+        <nav>
+          <ul class="footer-nav__items">
+            <li class="footer-nav__item footer-nav__item--full-width">
+              <a href="#" class="logo logo-footer">Nîmes</a>
+            </li>
+            <li class="footer-nav__item"><a href="#">Shop</a></li>
+            <li class="footer-nav__item"><a href="#">Delivery</a></li>
+            <li class="footer-nav__item"><a href="#">Service</a></li>
+            <li class="footer-nav__item"><a href="#">Sitemap</a></li>
+            <li class="footer-nav__item"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <a href="#"><img src="assets/fb.svg" alt="Facebook" /></a>
+          <a href="#"><img src="assets/insta.svg" alt="Instagram" /></a>
+          <a href="#"><img src="assets/pinterest.svg" alt="Pinterest" /></a>
+          <a href="#"><img src="assets/twitter.svg" alt="Twitter" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
